@@ -1,0 +1,23 @@
+
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+      <!-- FACEBOOK INFORMATION -->
+      <div class="col-sm-6">
+        <div class="well">
+          <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+          <p>
+            <img ng-src="{{profile._json.picture.data.url}}" />
+            <br>
+            <strong>Name</strong>: {{profile._json.name}}<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

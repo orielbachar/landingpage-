@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
+
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
@@ -33,10 +34,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="/angular/angular.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.min.js"></script>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="exploit" ng-controller="exploitCtrl">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -74,7 +77,7 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                            <a href="#" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
                         </div>
                     </div>
                 </div>
@@ -96,6 +99,9 @@
             </div>
         </div>
     </header>
+    <a ng-click="getProfile()" style="color:black;" href="/#!/profile" class="btn btn-outline btn-xl page-scroll">Facebook</a>
+    <a style="color:black;" href="auth/facebook/callback" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+    <ui-view></ui-view>
 
     <section id="download" class="download bg-primary text-center">
         <div class="container">
@@ -232,6 +238,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+    <script src="/js/exploitApp.js"></script>
+    <script src="/js/controllers/exploitCtrl.js"></script>
+    <script src="/js/factories/exploitFact.js"></script>
 
 </body>
 
